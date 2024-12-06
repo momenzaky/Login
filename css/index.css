@@ -1,0 +1,64 @@
+body {
+    background-color: #24353F;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.box-shadow {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.form-control {
+    background-color: transparent;
+    color: #CED4DA;
+}
+
+.form-control:focus {
+    background-color: #24353F;
+    color: #CED4DA;
+    box-shadow: unset;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.color-aqua {
+    color: rgb(23, 162, 184);
+}
+
+.anc {
+    cursor: pointer;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.anc:hover {
+    text-decoration: underline;
+}
+
+.form-control::placeholder {
+    color: #CED4DA;
+}
+
+
+.navbar {
+    background-color: #24353F;
+}
+
+.btn-outline-warning {
+    --bs-btn-color: #CED4DA;
+}
+
+
+
+.margin {
+    margin-top: 13rem;
+    
+}
+

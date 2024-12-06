@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="container py-5">
+        <div class="w-75 mx-auto p-5   text-center box-shadow signUp">
+            <h2 class="mb-3 fw-semibold fs-40 color-aqua">Smart Login System</h2>
+
+            <div class="mb-3 ">
+                <input class="form-control userName" type="text" placeholder="Enter Your name" aria-label="default input example"
+                    id="userName">
+            </div>
+            <div class="mb-3">
+                <input class="form-control userEmail" type="text" placeholder="Enter Your email"
+                    aria-label="default input example" id="userEmail" oninput="validateSiteEmail()">
+                    <small class="text-danger d-none" id="errorEmail">It must contain letters, numbers, or symbols. </small>
+            </div>
+            <div class="mb-3">
+                <input class="form-control userPassword" type="password" placeholder="Enter Your password"
+                    aria-label="default input example" id="userPassword" oninput="validateSitePassword()">
+                    <small class="text-danger d-none" id="errorPassword">The password must contain letters or numbers </small>
+            </div>
+            <small class="text-danger fs-6 d-none errorInputs" id="errorInputs">All inputs is required</small>
+            <small class="text-success fs-6 d-none acceptInputs" id="acceptInputs">Success</small>
+            <small class="text-danger fs-6 d-none emailInputs" id="emailInputs">email already exists</small>
+            <button class="btn btn-outline-primary w-100 mt-3 Sign " type="submit" onclick="createSite()" id="Sign">Sign Up</button>
+            <p class="pt-3 text-white">You have an account?
+                <span><a class="text-white anc" href="index.html">Sign Up</a></span>
+            </p>
+
+
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/signup.js"></script>
+</body>
+</html>
